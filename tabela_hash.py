@@ -6,7 +6,7 @@ class tabela_hash:
         for i in range(10):
             self.tabela_hash[i] = [[] for _ in (n//10)] 
             #Dentro do vetor de primeiro nivel criamos um vetor de segundo nivel com tamanho n/10 em cada posicao
-            # Cada espaço desse vetor é uma lista
+            # Cada espaço dos vetores de segundo nivel são listas vazias
             
     def hash1(self, chave):
         return hash(chave) % self.n # Definindo função hash do primeiro nivel, usamos a funcao hash() de python para facilitar
